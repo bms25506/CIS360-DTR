@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h2>
+      <%= myname %>
+    </h2>
+    <h2>List of Places I'd like to Visit and Rating 1 to 10</h2>
+
+    <ul>
+      <% places.forEach(function(place) { %>
+        <li>
+          <%= place.name %> : <%= place.rating %>
+        </li>
+      <% }); %>
+    </ul>
+  </body>
+</html>
